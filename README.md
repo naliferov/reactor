@@ -1,2 +1,2 @@
 # Reactor
-Example of modern frontend env. Typescript + SASS + React + SSR 
+Example of modern frontend env. Typescript + Sass + React + SSR 
