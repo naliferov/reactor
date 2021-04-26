@@ -1,0 +1,307 @@
+/*@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/font/JetBrainsMono-Regular.woff2") format("woff");
+}*/
+
+:root {
+    --color-beige: #fbf7f0;
+    --color-neutral: var(--color-beige);
+    --font-base-family: 'Inter', sans-serif;
+    --font-base-size: 1rem;
+    --font-base-weight: 400;
+    --font-base-style: normal;
+    --font-base-letter-spacing: normal;
+    --font-base-line-height: 1.5;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+div,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    background: #f5f5f5;
+    font-size: var(--font-base-size);
+}
+
+h1, h2, h3 {
+    color: #111;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    padding: 5px;
+}
+
+app {
+    display: block;
+    font-family: var(--font-base-family);
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.form.signIn {
+    display: flex;
+    flex-direction: column;
+
+    /*width: 100%;
+    max-width: 250px;*/
+
+    /*background: #dcdcdc;*/
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+page {
+    display: block;
+}
+.pageContent {
+    margin-top: 15px;
+}
+
+.playersControlsBlock {
+    position: fixed;
+    width: 100%;
+    background: #F0F3F4;
+    padding-bottom: 5px;
+}
+.playTrackInfo {
+    height: 19px;
+    padding-left: 10px;
+}
+audio {
+    width: 100%;
+    height: 35px;
+    outline: none;
+}
+.playlist {
+    margin-top: 45px;
+}
+
+.ytTrack {
+    display: block;
+    cursor: pointer;
+}
+.ytTrack.active {
+    background: lightgray;
+}
+
+.card {
+    cursor: pointer;
+    position: absolute;
+
+    background: #05386B;
+    border: 2px solid #05386B;
+
+    color: white;
+
+    margin: 0;
+    padding: 0;
+}
+
+.selected {
+    border: 2px solid red !important;
+}
+
+.selected_background-gray {
+    background: gray;
+}
+
+.disable_selection {
+    user-select: none;
+}
+
+.btn {
+    padding: 0 3px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn.active {
+    color: white;
+    background: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.code_line.selected {
+    background: lightgray;
+}
+
+.reminder.active {
+    background: indianred;
+}
+
+editor {
+    display: flex;
+}
+
+.fsItem {
+    cursor: pointer;
+}
+
+cursor {
+    display: block;
+}
+
+.tabs {
+    margin-left: 20px;
+}
+
+.tabBar {
+    display: flex;
+}
+
+.tab {
+    color: white;
+    background: #353535;
+
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background: #5e7bd0;
+}
+
+.tabName.active {
+    background: #c1c1c1;
+}
+
+.tabContentBlock {
+    margin-top: 5px;
+}
+
+.tabContent {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 14px;
+}
+
+.cursor {
+    width: 1px;
+    height: 18px;
+    background: black;
+    position: relative;
+    top: 18px;
+    left: 0px;
+}
+
+.codeLine {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-variant-ligatures: none;
+    font-size: 14px;
+    height: 18px;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
+
+.var_use {
+    min-width: 5px;
+    min-height: 18px;
+}
+
+.var_name {
+    color: black;
+}
+
+.selected_code_part {
+    background: #a7b1ff !important;
+}
+
+.disabled_code_part {
+    opacity: 0.5;
+}
+
+.call_highlight {
+    color: #ffdf3c;
+}
+
+.SkipLine {
+    width: 10px;
+    height: 18px;
+}
+
+.bool {
+    color: orange;
+}
+.number {
+    color: #24add6;
+}
+.string {
+    color: #55a955;
+}
+
+.tag {
+    cursor: pointer;
+}
+.tag:hover {
+    color: white;
+    background: black;
+}
+
+.tag.active {
+    background: lightgray;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.tableActionsBtns {
+    white-space: nowrap;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.expandCollapse {
+    margin-right: 17px;
+}
+
+.kVPairSeparator {
+    display: inline-block;
+    width: 17px;
+    height: 2px;
+}
+
+.tabulate {
+    margin-left: 30px;
+}
+
+.treeItem { margin-left: 15px }
+a.treeItem { display: block }

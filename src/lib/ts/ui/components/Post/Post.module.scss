@@ -1,0 +1,48 @@
+
+.post {
+    display: flex;
+    justify-content: center;
+}
+
+.post_content {
+    max-width: 680px;
+}
+
+.post_content form input {
+    font-family: var(--font-base-family);
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #f5f5f5;
+    border: 0;
+}
+
+.post_content form textarea {
+    font-family: var(--font-base-family);
+    white-space: pre-line;
+    font-size: 1rem;
+    width: 680px;
+    min-height: 10em;
+
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+
+    resize: none;
+    background: #f5f5f5;
+    border: 0;
+}
+
+.post_text {
+    display: block;
+    color: #000;
+    margin-top: 1em;
+
+    font-style: normal;
+
+    line-height: 1.5rem;
+    word-wrap: normal;
+}
+
+.post_text p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
